@@ -4,8 +4,8 @@
 
 class Gemstone {
 private:
-    std::string name; // название камня
-    double weithg; // вес камня
+    std::string _name; // название камня
+    double _weithg; // вес камня
     double _pricePerCarat; // стоимость карата
     std::string _color; // цвет
     int _hardness; // твёрдость камня
@@ -22,16 +22,12 @@ public:
     const std::string& color, int hardness);
     ~Gemstone();
 
-    /*возврат имени
-    @return name
-    */
-    std::string getName() const;
-    /*возврат веса
-    @return weight
-    */
+     std::string getName() const;
     double getWeight() const;
-    /*возврат цены
-    @return price
-    */
-    double getPrice() const;
-};
+    double getPricePerCarat() const;
+    std::string getColor() const;
+    int getHardness() const;
+
+    double calculatePrice() const;
+    std::string getDescription() const;
+    std::string getType() const;
