@@ -5,7 +5,7 @@
 class Gemstone {
 private:
     std::string _name; // название камня
-    double _weithg; // вес камня
+    double _weight; // вес камня
     double _pricePerCarat; // стоимость карата
     std::string _color; // цвет
     int _hardness; // твёрдость камня
@@ -31,3 +31,5 @@ public:
     double calculatePrice() const;
     std::string getDescription() const;
     std::string getType() const;
+
+};

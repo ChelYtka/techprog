@@ -4,8 +4,8 @@
 
 class SemiPreciousGemstone : public Gemstone {
 protected:
-    bool IsTransparent; // прозрачность
-    std::string Pattern; // паттерн(шаблн)
+    bool isTransparent; // прозрачность
+    std::string pattern; // паттерн(шаблн)
 
 public:
     /* конструктор

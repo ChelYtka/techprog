@@ -6,16 +6,16 @@ Ruby::Ruby(const std::string& name, double weight, double pricePerCarat,
            const std::string& color, int hardness, bool isRare,
            const std::string& origin, double fluorescence, bool hasInclusions)
     : PreciousGemstone(name, weight, pricePerCarat, color, hardness, isRare, origin),
-      fluorescence(fluorescence), hasInclusions(hasInclusions) {}
+      _fluorescence(fluorescence), _hasInclusions(hasInclusions) {}
 
-double Ruby::getFluorescence() const { return fluorescence; }
-bool Ruby::getHasInclusions() const { return hasInclusions; }
+double Ruby::getFluorescence() const { return _fluorescence; }
+bool Ruby::getHasInclusions() const { return _hasInclusions; }
 
 std::string Ruby::getDescription() const {
     std::ostringstream oss;
     oss << PreciousGemstone::getDescription() << "\n"
-        << "  Флуоресценция: " << std::fixed << std::setprecision(1) << fluorescence << "%\n"
-        << "  Включения: " << (hasInclusions ? "Есть" : "Нет") << "\n"
+        << "  Флуоресценция: " << std::fixed << std::setprecision(1) << _fluorescence << "%\n"
+        << "  Включения: " << (_hasInclusions ? "Есть" : "Нет") << "\n"
         << "  Редкость: " << (isRare ? "Да" : "Нет") << "\n"
         << "  Происхождение: " << origin;
     return oss.str();

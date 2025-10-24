@@ -4,7 +4,7 @@
 
 class PreciousGemstone : public Gemstone {
 protected:
-    bool IsRare; // редкий или нет
+    bool isRare; // редкий или нет
     std::string origin; // происхождение
 
 public:
