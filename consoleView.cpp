@@ -32,6 +32,7 @@ void ConsoleView::showDictionary(const std::vector<std::shared_ptr<Word>>& words
         std::cout << (i + 1) << ". " << word->getEnglish()
                   << " - " << word->getRussian() << "\n";
     }
+    std::cout << std::endl;
 }
 
 void ConsoleView::showWordAdded() {
@@ -66,6 +67,6 @@ std::string ConsoleView::getAnswerInput() {
 int ConsoleView::getMenuChoice() {
     int choice;
     std::cin >> choice;
-    //std::cin.ignore();
+    std::cin.ignore();
     return choice;
 }
