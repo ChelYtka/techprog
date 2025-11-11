@@ -17,9 +17,9 @@ size_t Dictionary::getWordCount() const {
 }
 
 void Dictionary::initializeBasicDictionary() {
-    words.push_back(std::make_shared<Word>("hello", "привет"));
-    words.push_back(std::make_shared<Word>("world", "мир"));
-    words.push_back(std::make_shared<Word>("computer", "компьютер"));
-    words.push_back(std::make_shared<Word>("book", "книга"));
-    words.push_back(std::make_shared<Word>("house", "дом"));
+    words.push_back(std::make_shared<Word>("hello", "privet"));
+    words.push_back(std::make_shared<Word>("world", "mir"));
+    words.push_back(std::make_shared<Word>("computer", "computer"));
+    words.push_back(std::make_shared<Word>("book", "kniga"));
+    words.push_back(std::make_shared<Word>("house", "dom"));
 }
