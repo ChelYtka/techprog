@@ -1,22 +1,17 @@
 cmake_minimum_required(VERSION 3.10)
-project(TechProg)
+project(lab4)
 
-# Установка стандарта C++
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 11)
 
-# Добавление исполняемого файла со всеми исходными файлами
+# Добавляем все исходные файлы
 add_executable(main
     main.cpp
-    Necklace.cpp
-    Gemstone.cpp
-    PreciousGemstone.cpp    # Добавьте это
-    SemiPreciousGemstone.cpp # Добавьте это
-    Diamond.cpp
-    Ruby.cpp
-    Amethyst.cpp
-    Topaz.cpp
+    dictionary.cpp
+    word.cpp
+    wordFactory.cpp
+    consoleView.cpp
+    consoleController.cpp
 )
 
-# Если используете C++17 функции
-target_compile_features(main PRIVATE cxx_std_17)
+# Указываем включаемые директории
+target_include_directories(main PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
