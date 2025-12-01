@@ -1,10 +1,11 @@
-#include "consoleController.h"
+#include "mainwindow.h"
 
-int main() {
-    setlocale(LC_ALL, "Russian");
+#include <QApplication>
 
-
-    ConsoleController controller;
-    controller.run();
-    return 0;
+int main(int argc, char *argv[])
+{
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
 }
