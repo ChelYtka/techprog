@@ -57,7 +57,7 @@ void MainWindow::onBtnTrainingClicked()
     }
 
     showOnlyMainMenu();
-    ui->groupBoxTraining->setVisible(true);
+    ui->groupBoxTraining->setVisible(false);
 
     // Очищаем и показываем начало тренировки
     ui->tableDictionary->clear();
