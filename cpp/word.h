@@ -13,4 +13,7 @@ class Word
 
         std::string getEnglish();
         std::string getRussian();
+
+        std::string toString() const;
+        bool checkTranslation(const std::string& answer) const;
 };

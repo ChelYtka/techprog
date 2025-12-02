@@ -16,4 +16,8 @@ public:
     size_t getWordCount() const;
 
     void initializeBasicDictionary();
+
+    std::string findTranslation(const std::string& english) const;
+    std::shared_ptr<Word> getWordAt(int index) const;
+    void clear();
 };

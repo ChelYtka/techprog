@@ -12,3 +12,11 @@ std::string Word::getRussian()
 {
     return russian;
 }
+
+std::string Word::toString() const {
+    return english + " - " + russian;
+}
+
+bool Word::checkTranslation(const std::string& answer) const {
+    return answer == russian;
+}
